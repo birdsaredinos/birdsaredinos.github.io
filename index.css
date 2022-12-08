@@ -1,0 +1,144 @@
+/*For screens less than 720px, the site will use the following CSS*/
+@media screen and (max-width: 720px) {
+    .nav ul {
+        text-align: center;
+        padding: 10px;
+
+    }
+    .nav li {
+        text-align: center;
+        display: block;
+        padding: 14px, 16px;
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+    .youtube {
+        margin: 0px;
+    }
+}
+
+/* For screens larger than 720px, the site will use the following CSS*/
+@media screen and (min-width: 721px) {
+    .nav ul {
+        text-align: center;
+    }
+    
+    .nav li {
+        display: inline-block;
+        padding: 14px, 16px;
+        list-style-type: none;
+        overflow: hidden;
+    }
+}
+
+
+.youtube {
+    margin-left: 10%;
+}
+
+.nav li {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius: 5px;
+    background-color: bisque;
+    padding: 10px;
+}
+
+
+header {
+    background-image: url(/code-banner.PNG);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
+    margin-bottom: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+}
+
+body {
+    background-color: bisque;
+    font-family:Helvetica;
+}
+
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+th {
+    height: 50px ;
+    background-color:darkgray
+}
+
+td {
+    padding: 10px ;
+    font-family:'Times New Roman', Times, serif
+}
+
+.title {
+    height: 500px;
+   text-align: center;
+   font-weight: 500;
+   font-size: larger;
+   border: 1px solid;
+   background-color:darkgray;
+   overflow: hidden;
+   background-image: url(/everest.jpg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+}
+
+
+.click {
+    margin: 10px;
+    position: relative;
+}
+
+.vertical-center-click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.click-me {
+    background-color: grey;
+    color: white;
+    padding: 10px;
+}
+
+.click-me:hover {
+    background-color: white;
+    color: grey;
+    padding: 20px;
+}
+
+.click-me:active {
+    color: seagreen;
+    background-color: green;
+    height: 50px;
+    width: 100px;
+    
+
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title {
+    transition-property: font-size, color;
+    transition-duration: 5ms;
+}
+
+.title:hover {
+    font-size: 30px;
+    color: indigo;
+}
+
+
